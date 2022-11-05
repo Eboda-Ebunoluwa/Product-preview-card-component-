@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+      
+    body, html{
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      background-color: rgb(153, 236, 150);
+    }
+
+    main{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .container{
+      /* border: 1px solid black; */
+      display: flex;
+      justify-content: center;
+      height: auto;
+      max-width: 690px;
+      background-color: white;
+      border-radius: 10px;
+      margin-top: 120px;
+      margin-left: 600px;
+    }
+
+    .image{
+      max-width: 300px;
+      height: 505 px;
+      
+      /* text-align: left; */
+      border-radius: 10px;
+      /* display: inline; */
+
+    }
+
+    .fume{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 29px;
+      position: relative;
+      right: 34%;
+      bottom: 10%;
+      font-style: italic;
+    } 
+
+    h1{
+      font-size: 43px;
+      text-align: left;
+      position: relative;
+      bottom: 10%;
+    }
+
+    
+
+    .para{
+      position: relative;
+      bottom: 10%;
+      text-align: left;
+      font-size: 21px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+    .cancel{
+      text-decoration: line-through;
+      filter: opacity(100);
+      color: rgb(27, 122, 67);
+    }
+
+    span{
+      position: relative;
+      bottom: 10%;
+      right: 11%;
+    }
+
+    .greenp{
+      color: green;
+      font-size: 43px;
+      font-family: 'Times New Roman', Times, serif;
+      margin-right: 7px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .content{
+      padding: 30px;
+    }
+
+    .add{
+      border: 2px solid green;
+       padding: 6% 32%; 
+       background-color: green;
+       color: white;
+       font-size: 17px;
+       font-weight: bolder;
+       border-radius: 5px;
+    }
+ 
+     .cart{
+      width: 47px;
+      position: relative;
+      right: 56%;
+      top: 13%;
+     }
+  </style>
+
+
+</head>
+<body>
+  <main>
+  <div class="container">
+    <img src="./image-product-desktop.jpg" class="image" alt="">
+    <div class="content">
+ <p class="fume"><u>Perfume</u> </p> 
+
+  <h1>Gabrielle <br> Essence Eau <br> De Parfum</h1> 
+
+  <p class="para">A floral, solar and voluptuous <span></span> interpretation composed by Olivier Polge, 
+  Perfumer-Creator for the House of CHANEL.</p> 
+
+ <span class="greenp">$149.99</span>  
+  <span class="cancel">$169.99</span> 
+  <img src="./images (4).jpeg" class="cart" alt="">
+  <button class="add">Add to Cart</button> 
+  </div>
+  </div>
+</body>
+</main>
+</html>
